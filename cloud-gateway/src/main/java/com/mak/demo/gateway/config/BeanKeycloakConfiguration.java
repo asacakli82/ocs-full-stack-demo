@@ -1,6 +1,5 @@
 package com.mak.demo.gateway.config;
 
-import org.keycloak.authorization.client.AuthzClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,8 +17,5 @@ public class BeanKeycloakConfiguration {
         return restTemplate;
     }
 
-    /*@Bean
-    public AuthzClient authzClient() {
-        return AuthzClient.create();
-    }*/
+
 }

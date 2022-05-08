@@ -17,9 +17,7 @@ public class WebClientConfig {
 	@Value("${keycloak.client-id}")
 	private String clientId;
 
-	/**
-	 * extracts the access token for the authenticated user and puts it into a request header for downstream requests
-	 */
+
 	@Bean
 	public ServerOAuth2AuthorizedClientExchangeFilterFunction filter(ReactiveClientRegistrationRepository clientRegistrationRepository,
 			ServerOAuth2AuthorizedClientRepository authorizedClientRepository) {

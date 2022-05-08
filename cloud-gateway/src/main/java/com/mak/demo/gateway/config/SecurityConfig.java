@@ -56,7 +56,6 @@ public class SecurityConfig {
         configuration.setAllowCredentials(true);
 
         List<String> exposedHeaders = new ArrayList<>();
-        exposedHeaders.add("TAMS-UTC-TIME");
         exposedHeaders.add("Content-Disposition");
         configuration.setExposedHeaders(exposedHeaders);
 
